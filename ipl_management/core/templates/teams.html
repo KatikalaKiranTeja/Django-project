@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Teams</h2>
+
+<table>
+<tr>
+    <th>Name</th>
+    <th>Coach</th>
+    <th>Home Ground</th>
+</tr>
+
+{% for team in teams %}
+<tr>
+    <td>{{ team.name }}</td>
+    <td>{{ team.coach }}</td>
+    <td>{{ team.home_ground }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+{% endblock %}
